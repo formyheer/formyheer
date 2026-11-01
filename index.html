@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100817">
+  <meta name="description" content="A universe made with love, just for Heer.">
+  <title>Heer | My Forever ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+
+  <canvas id="universe"></canvas>
+  <div class="vignette"></div>
+  <div id="petals"></div>
+  <div id="confetti"></div>
+
+  <audio id="music" loop preload="none">
+    <source src="assets/love-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music">
+    ♪ <span id="musicLabel">Music Off</span>
+  </button>
+
+  <main>
+
+    <!-- INTRO -->
+    <section class="page active" id="intro">
+      <div class="intro-orb">♡</div>
+      <span class="eyebrow">A STORY WRITTEN IN THE STARS</span>
+      <h1 class="hero-heading">Hey, <span>Heer</span>...</h1>
+      <p class="intro-text">
+        Somewhere between a million stars,<br>
+        my heart found its favourite person.
+      </p>
+      <button class="primary-btn" data-next="envelope">
+        Enter My Universe <span>✦</span>
+      </button>
+      <div class="bottom-note">A LITTLE SURPRISE MADE JUST FOR YOU</div>
+    </section>
+
+    <!-- ENVELOPE -->
+    <section class="page" id="envelope">
+      <span class="eyebrow">A SECRET LETTER</span>
+      <h2 class="section-title">Something for you,<br><em>my Heer.</em></h2>
+
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-paper">
+            <span>To my favourite girl</span>
+            <b>Heer ❤️</b>
+            <small>With all my love...</small>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">♥</div>
+        </div>
+      </div>
+
+      <p class="soft-text" id="envelopeHint">Tap the envelope to open it</p>
+      <button class="primary-btn hidden" id="letterNext">
+        Read My Heart →
+      </button>
+    </section>
+
+    <!-- LOVE LETTER -->
+    <section class="page" id="letter">
+      <span class="eyebrow">WORDS FROM MY HEART</span>
+      <div class="glass-card">
+        <div class="tiny-heart">♥</div>
+        <h2 class="script-heading">My Dearest Heer</h2>
+        <p id="loveText" class="love-text"></p>
+        <div class="signature">Forever yours, ❤️</div>
+      </div>
+      <button class="primary-btn" data-next="garden">
+        A Garden For You 🌹
+      </button>
+    </section>
+
+    <!-- ROSE GARDEN -->
+    <section class="page" id="garden">
+      <span class="eyebrow">A LITTLE WORLD OF LOVE</span>
+      <h2 class="script-heading giant">For You, Heer</h2>
+
+      <div class="garden">
+        <div class="moon"></div>
+        <div class="rose rose-one">🌹</div>
+        <div class="rose rose-two">🌹</div>
+        <div class="rose rose-three">🌹</div>
+        <div class="butterfly butterfly-one">🦋</div>
+        <div class="butterfly butterfly-two">🦋</div>
+        <div class="garden-heart">♡</div>
+      </div>
+
+      <p class="soft-text">
+        If every rose could tell you how much you mean to me,<br>
+        this garden would never be big enough.
+      </p>
+      <button class="primary-btn" data-next="memories">
+        Our Little Memories →
+      </button>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="page" id="memories">
+      <span class="eyebrow">MY FAVOURITE MOMENTS</span>
+      <h2 class="script-heading giant">Us, Always.</h2>
+      <p class="soft-text">Every picture holds a little piece of my heart.</p>
+
+      <div class="gallery">
+        <article class="photo-card">
+          <img src="WhatsApp Image 2026-11-01 at 10.10.20 AM (1).jpeg" alt="Our first memory">
+          <p>My favourite smile ❤️</p>
+        </article>
+        <article class="photo-card tilted">
+          <img src="WhatsApp Image 2026-11-01 at 10.10.20 AM (2).jpeg" alt="Our special moment">
+          <p>My favourite person ✨</p>
+        </article>
+        <article class="photo-card">
+          <img src="WhatsApp Image 2026-11-01 at 10.10.20 AM.jpeg" alt="A memory together">
+          <p>My forever happiness 💗</p>
+        </article>
+      </div>
+
+      <button class="primary-btn" data-next="timeline">
+        More Than Memories →
+      </button>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="page" id="timeline">
+      <span class="eyebrow">OUR STORY</span>
+      <h2 class="script-heading giant">Little Things,<br>Big Feelings.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot">♡</div>
+          <div><small>THE BEGINNING</small>
+            <h3>When I Met You</h3>
+            <p>One ordinary moment became the beginning of something extraordinary.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">♥</div>
+          <div><small>THE MAGIC</small>
+            <h3>When You Became Special</h3>
+            <p>Somehow, your smile started becoming my favourite part of every day.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">∞</div>
+          <div><small>THE DREAM</small>
+            <h3>A Lifetime With You</h3>
+            <p>And now, all I dream about is making a thousand more memories together.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="primary-btn" data-next="countdown">
+        A Promise For Tomorrow →
+      </button>
+    </section>
+
+    <!-- COUNTDOWN / PROMISE -->
+    <section class="page" id="countdown">
+      <span class="eyebrow">A PROMISE TO MY FAVOURITE GIRL</span>
+      <h2 class="script-heading giant">Forever Starts<br>With You.</h2>
+
+      <div class="promise-card">
+        <div class="promise-icon">∞</div>
+        <h3>One Promise</h3>
+        <p>
+          To keep choosing you.<br>
+          To keep making you smile.<br>
+          To hold your hand through every season.<br>
+          To never stop creating beautiful memories.
+        </p>
+      </div>
+
+      <div class="counter">
+        <span>MY HEART'S FAVOURITE PERSON</span>
+        <strong>HEER</strong>
+        <small>Yesterday. Today. Tomorrow. Always.</small>
+      </div>
+
+      <button class="primary-btn" data-next="proposal">
+        There's One Question... 💍
+      </button>
+    </section>
+
+    <!-- PROPOSAL -->
+    <section class="page" id="proposal">
+      <div class="ring">💍</div>
+      <span class="eyebrow">THE MOST IMPORTANT QUESTION</span>
+
+      <h1 class="proposal-title">
+        Heer,<br>
+        <em>Will You Be</em><br>
+        My Forever?
+      </h1>
+
+      <p class="soft-text">
+        Out of all the people in this universe,<br>
+        my heart keeps choosing you.
+      </p>
+
+      <div class="proposal-buttons">
+        <button class="yes-btn" id="yesBtn">YES! ❤️</button>
+        <button class="maybe-btn" id="maybeBtn">Let me blush 🙈</button>
+      </div>
+
+      <p class="tiny-note">A question from my heart, with all my love.</p>
+    </section>
+
+    <!-- CELEBRATION -->
+    <section class="page" id="celebration">
+      <div class="celebration-heart">💖</div>
+      <span class="eyebrow">THE BEGINNING OF FOREVER</span>
+
+      <h1 class="final-title">She Said Yes!</h1>
+      <h2 class="script-heading">My Heer, My Forever.</h2>
+
+      <div class="final-message">
+        You are my favourite hello,<br>
+        my hardest goodbye,<br>
+        and my most beautiful dream.<br><br>
+        I promise to keep choosing you,<br>
+        in every lifetime, in every universe.<br><br>
+        I love you, Heer. ❤️
+      </div>
+
+      <div class="forever-symbol">∞</div>
+      <p class="tiny-note">OUR LITTLE FOREVER STARTS HERE</p>
+
+      <button class="primary-btn" id="replayBtn">
+        Relive Our Story ↻
+      </button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
